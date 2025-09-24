@@ -94,7 +94,7 @@ async def on_message(message):
                 while voice_client.is_playing():
                     await asyncio.sleep(1)
                 await voice_client.disconnect()
-    if "Crazy Hamburger" in message.content.lower():
+    if "crazy hamburger" in message.content.lower():
         await message.channel.send('Did someone say Crazy Hamburger?( ͡° ͜ʖ ͡°)')
         await message.channel.send(file = discord.File('discord_bot/assets/crazy-hamburger.jpg'))
             
