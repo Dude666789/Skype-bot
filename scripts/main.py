@@ -10,7 +10,7 @@ duration = timedelta(minutes=1)
 client = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 target_channel_id = 123456789012345678  # Replace with your target channel ID
 target_vc_channel_id = 123456789012345678  # Replace with your target voice channel ID
-invisible_chars = ['\u200B', '\u200C', '\u200D', '\u00AD', '\u00A0']
+invisible_chars = ['\u200B', '\u200C', '\u200D', '\u00AD', '\u00A0', '\u0435']
 def contains_invisible_characters(text):
     return any(char in invisible_chars for char in text)
 #target_channel_id = 1418879042622455831
